@@ -1,0 +1,74 @@
+
+<test-results name="PSate" total="5" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-08-30" time="14:26:37">
+    
+    <environment 
+        nunit-version="2.5.8.0" 
+        clr-version="4.0.30319.42000" 
+        os-version="10.0.14901"
+        platform="Microsoft Windows 10 Pro Insider Preview|C:\WINDOWS|\Device\Harddisk0\Partition3"
+        cwd="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests"
+        machine-name="PHOENIX"
+        user="Nick"
+        user-domain="PHOENIX"
+    />
+
+
+    <culture-info 
+        current-culture="en-AU" 
+        current-uiculture="en-AU" 
+    />
+
+	
+    <test-suite type="Powershell" name="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests" executed="True" result="Failure" success="False" time="0.0144692" asserts="1">
+    <results>
+        
+    <test-suite type="Powershell" name="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests\vCenter.tests.ps1" executed="True" result="Failure" success="False" time="0.0144692" asserts="1">
+    <results>
+        
+    <test-suite type="Powershell" name="BloodyShell Tests" executed="True" result="Failure" success="False" time="0.0144692" asserts="1">
+    <results>
+        
+        
+    <test-case name="has a valid vCenter connection" executed="True" result="Success" success="True" time="0.0027485" asserts="0">
+        
+        
+    </test-case>
+ 
+    <test-case name="succeeds because I told it to" executed="True" result="Success" success="True" time="0.0024363" asserts="0">
+        
+        
+    </test-case>
+ 
+    <test-case name="succeeds because I told it to" executed="True" result="Success" success="True" time="0.0014809" asserts="0">
+        
+        
+    </test-case>
+ 
+    <test-case name="succeeds because I told it to" executed="True" result="Success" success="True" time="0.0015848" asserts="0">
+        
+        
+    </test-case>
+ 
+    <test-case name="fails because I told it to" executed="True" result="Failure" success="False" time="0.0062187" asserts="1">
+        
+	    <failure>
+		    <message><![CDATA[Expected that (actual) () not be (null)]]></message>
+		    <stack-trace><![CDATA[System.Collections.Hashtable.StackTrace]]></stack-trace>
+	    </failure>
+
+        
+    </test-case>
+
+    </results>
+    </test-suite>
+
+        
+    </results>
+    </test-suite>
+
+        
+    </results>
+    </test-suite>
+
+</test-results>
+
