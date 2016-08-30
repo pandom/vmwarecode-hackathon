@@ -1,0 +1,36 @@
+# nsx deployment test file
+---
+    VIServer:
+        UserName: administrator@vsphere.local
+        Password: VMware1!
+        Name: 192.168.1.201
+    NSX-Manager:
+        Name: nsx-m-01
+        DatastoreName: vsanDatastore
+        IPv4Address: 192.168.1.35
+        RamMB: 6144
+        vCpu: 4
+        DiskSpaceGB: 60
+    Datastore:
+        Name: vsanDatastore
+        Type: vsan
+        MinimumSpaceGB: 100
+    NSX-Controllers:
+        DatastoreName: vsanDatastore
+        PortGroup: 'VM Network'
+        Ram: 512
+        Cpu: 1
+        MinimumSpaceGB: 2
+    NetworkSharedServices:
+        NtpPrimary: 192.168.1.201
+        NtpSecondary: 192.168.1.201
+        PrimaryDns: 192.168.1.201
+        SecondaryDns: 192.168.1.201
+    Cluster:
+        Name: NSX
+        DrsEnabled: True
+        DrsMode: FullyAutomated
+    Networking:
+        PortGroup: 'VM Network'
+        DvsName: nsx-vswitch
+        Mtu: 1600
