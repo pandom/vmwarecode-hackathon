@@ -1,5 +1,5 @@
 
-<test-results name="PSate" total="5" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-08-30" time="14:26:37">
+<test-results name="PSate" total="5" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-08-29" time="21:50:11">
     
     <environment 
         nunit-version="2.5.8.0" 
@@ -19,37 +19,37 @@
     />
 
 	
-    <test-suite type="Powershell" name="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests" executed="True" result="Failure" success="False" time="0.0144692" asserts="1">
+    <test-suite type="Powershell" name="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests" executed="True" result="Failure" success="False" time="0.8486174" asserts="1">
     <results>
         
-    <test-suite type="Powershell" name="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests\vCenter.tests.ps1" executed="True" result="Failure" success="False" time="0.0144692" asserts="1">
+    <test-suite type="Powershell" name="C:\Users\Nick\Documents\git\vmwarecode-hackathon\Tests\vCenter.tests.ps1" executed="True" result="Failure" success="False" time="0.8486174" asserts="1">
     <results>
         
-    <test-suite type="Powershell" name="BloodyShell Tests" executed="True" result="Failure" success="False" time="0.0144692" asserts="1">
+    <test-suite type="Powershell" name="BloodyShell Tests" executed="True" result="Failure" success="False" time="0.8486174" asserts="1">
     <results>
         
         
-    <test-case name="has a valid vCenter connection" executed="True" result="Success" success="True" time="0.0027485" asserts="0">
+    <test-case name="has a valid vCenter connection" executed="True" result="Success" success="True" time="0.0015513" asserts="0">
         
         
     </test-case>
  
-    <test-case name="succeeds because I told it to" executed="True" result="Success" success="True" time="0.0024363" asserts="0">
+    <test-case name="vsandatastore should exist" executed="True" result="Success" success="True" time="0.3831639" asserts="0">
         
         
     </test-case>
  
-    <test-case name="succeeds because I told it to" executed="True" result="Success" success="True" time="0.0014809" asserts="0">
+    <test-case name="NSX cluster should exist" executed="True" result="Success" success="True" time="0.3915579" asserts="0">
         
         
     </test-case>
  
-    <test-case name="succeeds because I told it to" executed="True" result="Success" success="True" time="0.0015848" asserts="0">
+    <test-case name="Host 192.168.1.20 has NTP server configured" executed="True" result="Success" success="True" time="0.0531283" asserts="0">
         
         
     </test-case>
  
-    <test-case name="fails because I told it to" executed="True" result="Failure" success="False" time="0.0062187" asserts="1">
+    <test-case name="Host 192.168.1.1 has NTP server configured" executed="True" result="Failure" success="False" time="0.019216" asserts="1">
         
 	    <failure>
 		    <message><![CDATA[Expected that (actual) () not be (null)]]></message>

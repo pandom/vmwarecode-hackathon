@@ -15,20 +15,19 @@ Describing "BloodyShell Tests" {
     if ($vCenterConn) { 
 
         #Only run these tests if vCenter is connected
-        it "succeeds because I told it to" { 
-            $null | should be null
+        it "vsandatastore should exist" { 
+            Get-Datastore "vsandatastore" | should not be null
         }
-        it "succeeds because I told it to" { 
-            $null | should be null
+        it "NSX cluster should exist" { 
+            Get-Cluster "nsx" | should not be null
         }
 
-        it "succeeds because I told it to" { 
-            $null | should be null
+        foreach ( $vmhost in get-vmhost) {
+            it "Host $($vmhost.name) has NTP server configured" { 
+                Get-VMHostNTPServer -VMHost $vmhost | should not be null
+            }
         }
     }
 
-    it "fails because I told it to" { 
-        $null | should not be null
-    }
 
 }
